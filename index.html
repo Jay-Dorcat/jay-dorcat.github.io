@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<title>Portfolio</title>
+		<title>Jay (Dorcat)</title>
 		<style>
 body {
 	touch-action: none;
@@ -109,8 +109,8 @@ body {
 	visibility: visible;
 }
 		</style>
-		<link id='-gd-engine-icon' rel='icon' type='image/png' href='Portfolio.icon.png' />
-<link rel='apple-touch-icon' href='Portfolio.apple-touch-icon.png'/>
+		<link id='-gd-engine-icon' rel='icon' type='image/png' href='Website.icon.png' />
+<link rel='apple-touch-icon' href='Website.apple-touch-icon.png'/>
 
 	</head>
 	<body>
@@ -142,9 +142,9 @@ if (!window.SharedArrayBuffer) {
 }
 </script>
 <script src="coi-serviceworker.min.js"></script>
-<script src="Portfolio.js"></script>
+<script src="Website.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Portfolio","experimentalVK":false,"fileSizes":{"Portfolio.pck":28576,"Portfolio.wasm":27913656},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Website","experimentalVK":false,"fileSizes":{"Website.pck":28576,"Website.wasm":27913656},"focusCanvas":true,"gdextensionLibs":[]};
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
@@ -224,9 +224,8 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		//const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
-		//displayFailureNotice(missingMsg + missing.join('\n'));
-		displayFailureNotice("Try refreshing the page!\nIf this issue persists your device or browser may not be supported");
+		const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+		displayFailureNotice(missingMsg + missing.join('\n'));
 	} else {
 		setStatusMode('indeterminate');
 		engine.startGame({
