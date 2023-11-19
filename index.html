@@ -144,7 +144,7 @@ if (!window.SharedArrayBuffer) {
 <script src="coi-serviceworker.min.js"></script>
 <script src="Portfolio.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Portfolio","experimentalVK":false,"fileSizes":{"Portfolio.pck":14832,"Portfolio.wasm":27913656},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"Portfolio","experimentalVK":false,"fileSizes":{"Portfolio.pck":28576,"Portfolio.wasm":27913656},"focusCanvas":true,"gdextensionLibs":[]};
 const engine = new Engine(GODOT_CONFIG);
 
 (function () {
@@ -224,9 +224,9 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		displayFailureNotice('Try Refreshing the page.\nIf that doesn\'t work, your Device or Browser may not be supported!');
 		//const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
 		//displayFailureNotice(missingMsg + missing.join('\n'));
+		displayFailureNotice("Try refreshing the page!\nIf this issue persists your device or browser may not be supported");
 	} else {
 		setStatusMode('indeterminate');
 		engine.startGame({
