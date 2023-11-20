@@ -224,8 +224,9 @@ const engine = new Engine(GODOT_CONFIG);
 
 	const missing = Engine.getMissingFeatures();
 	if (missing.length !== 0) {
-		const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
-		displayFailureNotice(missingMsg + missing.join('\n'));
+		//const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
+		//displayFailureNotice(missingMsg + missing.join('\n'));
+		displayFailureNotice("Try refreshing!\nIf the issue persists\nthis website may not work on your device.\n(Mobile and IOS are known not to work)");
 	} else {
 		setStatusMode('indeterminate');
 		engine.startGame({
